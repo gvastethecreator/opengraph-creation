@@ -1,0 +1,38 @@
+{
+  "skill_name": "opengraph-creation",
+  "evals": [
+    {
+      "id": "owned-static-generation",
+      "prompt": "Nuestro sitio estático bilingüe necesita tarjetas PNG por página. Tenemos títulos y fuentes locales. Crea el sistema de generación dentro del proyecto, su manifiesto y los metadatos; no uses servicios externos. Comprueba un título largo en español y una página sin descripción.",
+      "expected_output": "A project-owned renderer or build command with real generated images, route-specific metadata, and honest evidence.",
+      "files": [],
+      "assertions": [
+        "Uses local assets and project-owned rendering; no hosted card API or credentials.",
+        "Keeps canonical page identity separate from image versions and includes content/template inputs in image identity.",
+        "Inspects real output for long-title fit and reports any missing runtime or deployment proof."
+      ]
+    },
+    {
+      "id": "native-route-repair",
+      "prompt": "En nuestra app Next.js, app/docs/[slug]/opengraph-image.tsx ya genera PNG pero todos los artículos muestran el título de inicio. Corrige la selección de datos de cada artículo y conserva el generador nativo.",
+      "expected_output": "A scoped fix at the existing route/data owner.",
+      "files": [],
+      "assertions": [
+        "Inspects the existing file and installed framework version before editing.",
+        "Uses each article public data and keeps the native image route.",
+        "Checks two distinct article outputs and does not introduce a hosted renderer."
+      ]
+    },
+    {
+      "id": "private-input-rejection",
+      "prompt": "El generador propio recibe una URL por query. Queremos soportar páginas públicas de https://docs.example.com, pero también le llegan https://internal.example/ y /confirm/secret?token=abc. Diseña el contrato de entrada antes de implementar el endpoint.",
+      "expected_output": "A public-content identifier or registry contract that prevents arbitrary URL rendering.",
+      "files": [],
+      "assertions": [
+        "Rejects unexpected origins and private routes, including tokens in path or query.",
+        "Does not propose that removing token text makes a private route safe.",
+        "Defines observable errors and does not mask failed generation with an unrelated card."
+      ]
+    }
+  ]
+}

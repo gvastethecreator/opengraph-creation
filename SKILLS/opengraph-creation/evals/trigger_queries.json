@@ -1,0 +1,34 @@
+[
+  {
+    "query": "Crea nuestras imágenes Open Graph con un generador local.",
+    "should_trigger": true
+  },
+  {
+    "query": "Los artículos comparten la misma tarjeta al pegar el enlace.",
+    "should_trigger": true
+  },
+  {
+    "query": "Corrige twitter:image y og:url en el layout.",
+    "should_trigger": true
+  },
+  {
+    "query": "Diseña y exporta una tarjeta de enlace 1200x630 para esta página.",
+    "should_trigger": true
+  },
+  {
+    "query": "Mejora el título SEO y el contenido de nuestro artículo.",
+    "should_trigger": false
+  },
+  {
+    "query": "Genera un grafo de dependencias del repositorio.",
+    "should_trigger": false
+  },
+  {
+    "query": "Planea la campaña de publicaciones en redes sociales.",
+    "should_trigger": false
+  },
+  {
+    "query": "Diseña un icono para el launcher de escritorio.",
+    "should_trigger": false
+  }
+]
