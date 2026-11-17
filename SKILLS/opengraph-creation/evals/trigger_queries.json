@@ -16,6 +16,22 @@
     "should_trigger": true
   },
   {
+    "query": "When I paste our blog link into LinkedIn the preview has no image.",
+    "should_trigger": true
+  },
+  {
+    "query": "Add a build step that renders one social share image per docs page.",
+    "should_trigger": true
+  },
+  {
+    "query": "Facebook keeps showing the old card after we changed the image.",
+    "should_trigger": true
+  },
+  {
+    "query": "Replace the hosted OG image service with our own opengraph-image route in Next.js.",
+    "should_trigger": true
+  },
+  {
     "query": "Mejora el título SEO y el contenido de nuestro artículo.",
     "should_trigger": false
   },
@@ -29,6 +45,22 @@
   },
   {
     "query": "Diseña un icono para el launcher de escritorio.",
+    "should_trigger": false
+  },
+  {
+    "query": "Generate a sitemap.xml and robots.txt for the site.",
+    "should_trigger": false
+  },
+  {
+    "query": "Make a favicon and apple-touch-icon set from our logo.",
+    "should_trigger": false
+  },
+  {
+    "query": "Write five tweets announcing the launch.",
+    "should_trigger": false
+  },
+  {
+    "query": "Add JSON-LD structured data for our product pages.",
     "should_trigger": false
   }
 ]
